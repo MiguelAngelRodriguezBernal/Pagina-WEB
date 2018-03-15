@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Formulario</title>
+
+</head>
+<body>
+	<h1>Formulario Basico.</h1>
+	<form autocomplete="on" name="Mi primer formulario">
+		<fieldset>
+			<p>
+			<!-- Inicio del Formulario -->
+			<legend>Datos Personales</legend>
+			</p>
+			<!--Nombre-->
+			<p>
+				<label for="nombre">Nombre Usuario</label>
+			</p>
+			<p>
+				<input type="text" placeholder="Miguel Rodriguez" name="nombre">
+			</p>
+			<!--Ingreso de Email-->
+			<p>
+				<label for="email">>Email</label>
+			</p>
+ 			<p>
+ 				<input type="email" required placeholder="m@robern.com" name="email" > 
+ 			</p>
+ 			<!--Ingreso Edad-->
+			<p>
+				<label for="edad">Edad</label>
+			</p>
+			<p>
+				<input type="number" required max="90" min="15" placeholder="25" name="edad">
+			</p>
+			<!--Seleccion Genero-->
+			<p>
+				<label for="genero">Genero</label>
+			</p>
+			<p>
+				<input type="radio" name="genero">"Masculino" <br> <input type="radio" name="genero">"Femenino"
+			</p>
+			<!--Ingreso Recomendacion-->
+			<p>
+				<label>Recomendado por:</label>
+			</p>
+			<br> 
+			<select name="recommend">
+			<option value="1">Google</option>
+			<option value="2">Amigo</option>
+			<option value="3">Redes sociales</option>
+			</select>
+			<!--Ingreso comentario-->
+			<p>
+				<label>Comentarios</label>
+			</p>
+			<p>
+				<textarea name="comentario" id cols="40" rows="4" =""></textarea>
+			</p>
+			<!--Aceptacion terminos y condiciones-->
+			<p>
+				<label for="acepto">Acepto terminos y condiciones</label>
+			</p>
+			<p>
+				<input type="checkbox" name="acepto">
+			</p>
+			<!--Enviar-->
+			<p>
+				<input type="submit" value="enviar">
+			</p>
+		</fieldset>
+
+
+	</form>
+
+</body>
+</html>
